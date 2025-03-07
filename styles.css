@@ -132,7 +132,7 @@ button:hover {
 }
 
 /* Медиа-запросы для мобильных устройств */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     header h1 {
         font-size: 1.8em;
     }
@@ -171,4 +171,4 @@ button:hover {
     .signature {
         font-size: 1em;
     }
-}
+} */
