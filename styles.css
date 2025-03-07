@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f9e3e3, #ffcccb);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    color: #e91e63;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+header h1 .name {
+    color: #ff4081;
+    animation: bounce 2s infinite;
+}
+
+h2 {
+    color: #e91e63;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9e3e3;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    animation: slideIn 1s ease-in-out;
+}
+
+.image-container {
+    margin: 20px 0;
+    position: relative;
+}
+
+.flower {
+    width: 80px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.miku {
+    width: 100px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.kitty {
+    width: 80px;
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    animation: float 5s ease-in-out infinite;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4081;
+}
+
+.hidden {
+    display: none;
+}
+
+.signature {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    ul li {
+        font-size: 0.8em;
+    }
+
+    .flower {
+        width: 60px;
+    }
+
+    .miku {
+        width: 80px;
+        left: -80px;
+    }
+
+    .kitty {
+        width: 60px;
+        right: -80px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .signature {
+        font-size: 1em;
+    }
+}
